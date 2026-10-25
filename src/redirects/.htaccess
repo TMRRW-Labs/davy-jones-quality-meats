@@ -1,0 +1,52 @@
+# Apache equivalent of _redirects, for a cPanel-style host.
+# Use whichever file matches the host; they say the same thing.
+#
+# VERIFY BEFORE LAUNCH against the real URL list in Google Search Console.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Product pages
+  RewriteRule ^beef/?$                  /products/beef.html [R=301,L]
+  RewriteRule ^fresh-beef/?$            /products/beef.html [R=301,L]
+  RewriteRule ^steaks?/?$               /products/beef.html#steak [R=301,L]
+  RewriteRule ^burgers/?$               /products/beef.html#burgers [R=301,L]
+  RewriteRule ^roasts/?$                /products/beef.html#roasts [R=301,L]
+  RewriteRule ^(premium-)?dry-aged/?$   /products/premium-dry-aged.html [R=301,L]
+  RewriteRule ^chicken/?$               /products/chicken.html [R=301,L]
+  RewriteRule ^pork/?$                  /products/pork.html [R=301,L]
+  RewriteRule ^sausages?/?$             /products/sausage.html [R=301,L]
+  RewriteRule ^appetizers/?$            /products/appetizers.html [R=301,L]
+  RewriteRule ^apps/?$                  /products/appetizers.html [R=301,L]
+  RewriteRule ^gluten-free/?$           /products/gluten-free.html [R=301,L]
+
+  # Merged pages
+  RewriteRule ^meatloaf/?$              /products/butcher-crafted.html#beef [R=301,L]
+  RewriteRule ^(beef-marrow-)?dog-bones/?$ /products/pantry-and-rubs.html#dog [R=301,L]
+  RewriteRule ^meat-church/?$           /products/pantry-and-rubs.html#rubs [R=301,L]
+  RewriteRule ^bbq-pit-boys/?$          /products/pantry-and-rubs.html#rubs [R=301,L]
+  # Charcoal and pellets discontinued Oct 2026; land them on the rubs section.
+  RewriteRule ^fogo(-charcoal)?/?$      /products/pantry-and-rubs.html#rubs [R=301,L]
+  RewriteRule ^lumberjack(-pellets)?/?$ /products/pantry-and-rubs.html#rubs [R=301,L]
+
+  # Everything else
+  RewriteRule ^(freezer-)?packs/?$      /freezer-packs.html [R=301,L]
+  RewriteRule ^freezer-packs/?$         /freezer-packs.html [R=301,L]
+  RewriteRule ^about(-us)?/?$           /our-story.html [R=301,L]
+  RewriteRule ^our-story/?$             /our-story.html [R=301,L]
+  RewriteRule ^contact(-us)?/?$         /contact.html [R=301,L]
+  RewriteRule ^locations/?$             /locations/index.html [R=301,L]
+  RewriteRule ^shop/?$                  /products/index.html [R=301,L]
+  RewriteRule ^products/?$              /products/index.html [R=301,L]
+  RewriteRule ^privacy-policy/?$        /privacy.html [R=301,L]
+  RewriteRule ^terms-of-use/?$          /terms.html [R=301,L]
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css            "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/webp          "access plus 1 year"
+  ExpiresByType image/svg+xml       "access plus 1 year"
+  ExpiresByType text/html           "access plus 1 hour"
+</IfModule>

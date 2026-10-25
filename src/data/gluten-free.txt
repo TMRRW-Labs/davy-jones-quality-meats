@@ -1,0 +1,18 @@
+# Gluten Free & No Gluten Added — src/data/gluten-free.txt
+#
+# SOURCE: Project Document, Oct 2026 revision.
+# The client rewrote this page around cross-contact language. Two separate
+# sections, never merged. Still worth a final legal read before launch.
+
+## Gluten Free | gluten-free
+> Prepackaged products that carry the manufacturer's gluten free designation.
+- Schinkel's All Beef Hot Dogs | Classic all-beef hot dogs with a firm bite and savoury flavour. | Gluten Free | schinkel-s-all-beef-wieners.jpg
+- Schinkel's Jumbo Hot Dogs | A larger-format hot dog with the same classic savoury flavour. | Gluten Free | schinkel-s-jumbo-legacy-wiener.jpg
+- Schinkel's Super 6 Hot Dogs | Extra-large hot dogs made for a hearty portion and full-flavoured bite. | Gluten Free | schinkel-s-super-6-franks.jpg
+
+## No Gluten Added | no-gluten-added
+> These products are prepared in our shops without intentionally added gluten-containing ingredients. Because our shops also handle products that contain gluten, cross-contact is possible and we describe these items as No Gluten Added, not Gluten Free.
+> If you have celiac disease or a serious sensitivity, talk to a butcher and we'll walk you through how the item is made.
+- House Beef Burgers | Our classic house burger, ground and pressed in-store. | No Gluten Added | bulk-20-x-4oz-pure-beef-burgers.jpg
+- 6oz Spinach & Feta Chicken Burgers | Made in-house with spinach and feta. | No Gluten Added | 6oz-spinach-and-feta-chicken-burgers-4-pack-no-gluten-added-1.jpg
+- Meatloaf | Homestyle, Bacon & Cheddar, or Jalapeño & Cheddar. | No Gluten Added | home-style-meatloaf-in-ready-to-cook-tin-tray-1-5lbs.jpg

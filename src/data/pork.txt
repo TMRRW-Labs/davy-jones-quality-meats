@@ -1,0 +1,23 @@
+# Pork — src/data/pork.txt
+#
+# SOURCE: Project Document, Oct 2026 revision, PORK page.
+
+## Fresh Pork | fresh-pork
+> Fresh Ontario pork prepared by our butchers, with custom cutting available to suit the way you want to cook it.
+- Bone-In Pork Chops | Cut to your preferred thickness. | Custom cut | pork-loin-center-cut-chops-2-pack.jpg
+- Butterfly Pork Chops | Butterflied for even cooking and easy grilling. | | butterfly-pork-loin-chops.jpg
+- Bone-In Pork Roast | Cut and tied in our shop, ready for roasting.
+- Boneless Pork Loin Roast | Lean, tender and easy to carve. | | boneless-pork-loin-roast.jpg
+- Boneless Pork Shoulder (Butt Portion) | Rich, well-marbled and ideal for pulled pork.
+- Pork Tenderloin | Lean, tender and quick to cook. | | pork-tenderloin-1pc.jpg
+- Pork Back Ribs | Meaty ribs well suited to low-and-slow cooking. | | pork-loin-back-ribs-1.jpg
+- Bacon | Available traditional, thick cut or diced. | | metzgers-traditional-bacon-1lbs.jpg
+- Peameal Bacon | Available sliced or by the chub. | | metzgers-sliced-peameal-bacon.jpg
+
+## Grill Ready | grill-ready
+> Prepared in our shops and ready to cook, with seasoned, stuffed and wrapped options made by our team as part of the Butcher Crafted collection.
+- Bacon Wrapped Pork Tenderloin Medallions | Tender pork medallions wrapped by hand with bacon. | Butcher Crafted | bacon-wrapped-pork-tenderloin-4-pack.jpg
+- House Rubbed Thick Pork Chops | Cut thick and finished with our Signature Smoky Sweet BBQ Rub. | House rub | davy-s-house-rubbed-pork-chops-2-pack.jpg
+- Stuffed Pork Loin Chops or Roast | Stuffed in-house and ready for the oven or grill. | Butcher Crafted | butcher-preparing-stuffed-pork-chops.jpg
+- Sausage Stuffed Mushrooms | Mushroom caps filled with our house-made sausage.
+- Smoked Pork Chops | Smoky, savoury and ready to heat through. | | metzgers-smoked-pork-loin-chops-2-pack-1.jpg

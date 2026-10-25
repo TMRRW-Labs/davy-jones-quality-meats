@@ -1,0 +1,17 @@
+# Build output. Netlify runs build.sh and publishes dist/ itself, so the
+# generated site does not belong in the repository.
+dist/
+dist.new/
+dist.old/
+
+# Internal agency notes, the client's master doc and generated copy exports.
+# Kept out of the repository because it is public.
+docs/
+
+# Local scratch
+.tmp/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store

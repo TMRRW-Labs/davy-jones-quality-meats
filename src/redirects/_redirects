@@ -1,0 +1,52 @@
+# Netlify / Cloudflare Pages redirect map.
+# Every URL that ranks on the current WordPress site needs to land somewhere on
+# the new one. 301 is permanent — that's what passes the ranking across.
+#
+# VERIFY BEFORE LAUNCH: pull the real URL list from Google Search Console
+# (Pages report) and from the WordPress sitemap, and check every line here
+# against it. The paths below are what the audit found; there may be more.
+
+# --- product pages -------------------------------------------------------
+/beef                       /products/beef.html                 301
+/fresh-beef                 /products/beef.html                 301
+/steak                      /products/beef.html#steak           301
+/steaks                     /products/beef.html#steak           301
+/burgers                    /products/beef.html#burgers         301
+/roasts                     /products/beef.html#roasts          301
+/dry-aged                   /products/premium-dry-aged.html     301
+/premium-dry-aged           /products/premium-dry-aged.html     301
+/chicken                    /products/chicken.html              301
+/pork                       /products/pork.html                 301
+/sausage                    /products/sausage.html              301
+/sausages                   /products/sausage.html              301
+/appetizers                 /products/appetizers.html           301
+/apps                       /products/appetizers.html           301
+/gluten-free                /products/gluten-free.html          301
+
+# --- pages that were merged into new homes -------------------------------
+/meatloaf                   /products/butcher-crafted.html#beef 301
+/dog-bones                  /products/pantry-and-rubs.html#dog  301
+/beef-marrow-dog-bones      /products/pantry-and-rubs.html#dog  301
+/meat-church                /products/pantry-and-rubs.html#rubs 301
+/bbq-pit-boys               /products/pantry-and-rubs.html#rubs 301
+
+# --- everything else -----------------------------------------------------
+/freezer-packs              /freezer-packs.html                 301
+/packs                      /freezer-packs.html                 301
+/about                      /our-story.html                     301
+/about-us                   /our-story.html                     301
+/our-story                  /our-story.html                     301
+/contact                    /contact.html                       301
+/contact-us                 /contact.html                       301
+/locations                  /locations/index.html               301
+/shop                       /products/index.html                301
+/products                   /products/index.html                301
+/privacy-policy             /privacy.html                       301
+/terms-of-use               /terms.html                         301
+
+# Charcoal and pellets were discontinued (client instruction, Oct 2026). These
+# URLs still rank, so they land on the Rubs page rather than a 404.
+/fogo                       /products/pantry-and-rubs.html#rubs 301
+/fogo-charcoal              /products/pantry-and-rubs.html#rubs 301
+/lumberjack                 /products/pantry-and-rubs.html#rubs 301
+/lumberjack-pellets         /products/pantry-and-rubs.html#rubs 301

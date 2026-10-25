@@ -1,0 +1,24 @@
+# Appetizers — src/data/appetizers.txt
+#
+# SOURCE: Project Document, Oct 2026 revision, APPETIZERS page.
+# CLIENT INSTRUCTION (Oct 2026): use the full word "Appetizers", not "Apps".
+
+## Fries | fries | compact
+> Restaurant fries, sold frozen by the bag.
+- Clear Coat | | | davy-s-clear-coat-fries-4-5lbs-1.jpg
+- Salt & Pepper | | | davy-s-salt-and-pepper-fries-4lbs-1.jpg
+- Sweet Potato | | | davy-s-sweet-potato-fries-2-5lbs-1.jpg
+- Curly | | | davy-s-curly-fries-4lbs-1.jpg
+- Lattice | | | davy-s-crispy-lattice-fries-4lbs-1.jpg
+- Onion Rings
+
+## Appetizers | appetizers
+> Breaded appetizers and chicken, sold frozen and ready for the fryer or air fryer.
+- Mozzarella Sticks | Crispy breading with a warm, melted mozzarella centre. | | davy-s-mozzarella-sticks-1lbs-1.jpg
+- Breaded Pickle Spears | Tangy pickle spears coated in a crisp seasoned breading. | | breaded-pickle-spears-1lbs-1.jpg
+- Mac & Cheese Bites | Creamy macaroni and cheese in a crispy bite-sized coating. | | davy-s-mac-and-cheese-wedges-1lbs-1.jpg
+- Breaded Mushrooms | Tender mushrooms coated in seasoned breading and ready to crisp. | | davy-s-breaded-mushroom-1lbs-1.jpg
+- Breaded Chicken Fingers | Made with 100% chicken breast tenderloins and lightly breaded. | | chicken-fingers-1.jpg
+- 5oz Breaded Chicken Breast | A full chicken breast portion with a crisp breaded coating. | | davy-s-5oz-breaded-chicken-breast-2-pack-1.jpg
+- 5oz Spicy Breaded Chicken Breast | A full breaded chicken breast portion with added heat. | | spicy-5oz-breaded-chicken-breast-2-pack-1.jpg
+- Breaded Boneless Chicken Chunks | Tender boneless chicken pieces with a crispy breaded coating. | | breaded-chicken-bites-boneless-wings-1lbs-1.jpg

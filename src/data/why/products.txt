@@ -1,0 +1,15 @@
+# Products Overview.
+#
+# The client's October document left this page on the OLD shared WHY block:
+# the old heading ("Why choose Davy Jones over the grocery store?") and the old
+# value points. Requirement 4 removes the grocery heading, so the heading below
+# is ours. The six value points are the document's literal copy for this page,
+# not a substitution from another page.
+EYEBROW: WHY DAVY JONES
+HEADING: What You Get at Davy Jones.
+- Premium quality at a fair price | You're getting more than a tray of meat. You're getting quality products, skilled preparation, custom cutting and help from people who know what they're selling.
+- Real butchers, real advice | Tell us what you're making and we'll help you choose the right cut, how much you need and how to cook it, so you can leave knowing you bought the right thing.
+- Custom cutting at no extra charge | Want thicker steaks, a roast sized for the family or a specific trim? Tell us how you want it and we'll cut it that way, so you're not limited to whatever is already in the case.
+- Alberta beef, aged 21+ days | Our Alberta beef is grain-fed for marbling and aged a minimum of 21 days before we cut it, giving the beef time to develop the texture and flavour we're looking for.
+- Specialty products worth the trip | From dry-aged beef and A5 wagyu to lobster tails and Butcher Crafted ready-to-cook options, you'll find products that go well beyond the everyday meat case.
+- Made in our shop | Our sausages, burgers and Butcher Crafted products are prepared in-store by our team, so you can choose from products made here instead of relying only on pre-made options brought in from somewhere else.

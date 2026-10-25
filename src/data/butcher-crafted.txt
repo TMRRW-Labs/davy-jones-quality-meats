@@ -1,0 +1,38 @@
+# Butcher Crafted — src/data/butcher-crafted.txt
+#
+# SOURCE: Project Document, Oct 2026 revision, BUTCHER CRAFTED page.
+# CLIENT INSTRUCTION (Oct 2026): use the full word "Appetizers", not "Apps".
+
+## Beef | beef
+> Ground, pressed, wrapped and stuffed in the shop.
+- Steak Bites | Premium steak wrapped in bacon. | | bacon-wrapped-beef-tenderloin-ungraded.jpg
+- 6oz Signature Steak Burger | A house burger made with premium steak trim for rich beef flavour. | | 6oz-prime-rib-burgers-4-pack.jpg
+- 6oz Pure Beef Burger | Our classic house burger, ground and pressed in-store. | No Gluten Added | 6oz-beef-burgers-4-flavours-4-pack-1.jpg
+- 4oz Pure Beef Burger | Our classic house burger, ground and pressed in-store. | No Gluten Added | bulk-20-x-4oz-pure-beef-burgers.jpg
+- 6oz Brisket Burger | A rich, savoury burger made with brisket in the blend.
+- 6oz Jalapeño & Cheddar Burger | Blended with jalapeño and cheddar throughout. | | 6oz-beef-burgers-4-flavours-4-pack-5.jpg
+- 6oz Bacon & Cheddar Burger | Blended with bacon and cheddar throughout.
+- 2oz Sliders | Our house burger in a smaller size made for slider buns. | | 2oz-medium-slider-beef-burgers-12-pack.jpg
+- Meatloaf | Homestyle, Bacon & Cheddar, or Jalapeño & Cheddar. | No Gluten Added | home-style-meatloaf-in-ready-to-cook-tin-tray-1-5lbs.jpg
+
+## Chicken | chicken
+> Ontario chicken, prepared in our shop.
+- Asparagus & Cheese Stuffed Boneless Chicken Breast | Stuffed in the shop and oven ready.
+- 6oz Spinach & Feta Chicken Burger & Sausages | Made in-house with spinach and feta. | No Gluten Added | 6oz-spinach-and-feta-chicken-burgers-4-pack-no-gluten-added-1.jpg
+- Signature Smoky Sweet BBQ Rubbed Flattened Chickens | Flattened and finished with our Signature Smoky Sweet BBQ Rub. | House rub
+- Bacon Wrapped Boneless Chicken Thighs | Wrapped by hand with bacon and ready to cook.
+
+## Pork | pork
+> Ontario pork prepared in our shops with wrapped, stuffed, seasoned, smoked and house-made options ready to cook.
+- Bacon Wrapped Pork Tenderloin Medallions | Tender pork medallions wrapped by hand with bacon. | | bacon-wrapped-pork-tenderloin-4-pack.jpg
+- Signature Smoky Sweet BBQ Rubbed Thick Cut Pork Chops | Thick-cut chops finished with our Signature Smoky Sweet BBQ Rub. | House rub | davy-s-house-rubbed-pork-chops-2-pack.jpg
+- Sausage Stuffed Mushrooms | Our house-made sausage in mushroom caps.
+- Stuffed Pork Loin Chops or Roast | Stuffed in the shop and oven ready. | | butcher-preparing-stuffed-pork-chops.jpg
+- Smoked Pork Chops | Smoky, savoury and ready to heat through. | | metzgers-smoked-pork-loin-chops-2-pack-1.jpg
+- House Made Sausages | Ground, seasoned and stuffed in our shops. | | 5lbs-mild-italian-sausage.jpg
+
+## Appetizers | appetizers
+> House-prepared favourites made for easy entertaining, snacking or adding something extra to the table.
+- Crab Stuffed Mushrooms | Mushroom caps filled with a rich crab stuffing and prepared in-house.
+- Bacon & Onion Stuffed Mushrooms | Mushroom caps filled with a savoury bacon and onion stuffing.
+- Jalapeño Poppers | Jalapeños stuffed and prepared in-house, ready to cook.

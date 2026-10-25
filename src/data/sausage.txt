@@ -1,0 +1,33 @@
+# Sausage — src/data/sausage.txt
+#
+# SOURCE: Project Document, Oct 2026 revision, SAUSAGE page.
+#
+# CLIENT INSTRUCTION (Oct 2026): use the new Classic & Traditional grouping and
+# remove the Garlic and World sections. Garlic, Garlic & Dill and Hungarian now
+# sit in Classic & Traditional; Fresh Chorizo sits in Spicy. Nineteen in total.
+
+## Classic & Traditional | classic-traditional
+- Mild Italian | Classic Italian-style seasoning with a mild, savoury flavour. | | 5lbs-mild-italian-sausage.jpg
+- Hot Italian | Classic Italian seasoning with added chilli heat.
+- Bratwurst | Mild, savoury and easy to pair with almost anything.
+- Oktoberfest | Pepper-forward, savoury and ideal on a bun.
+- Garlic | Straightforward garlic flavour with a savoury finish.
+- Garlic & Dill | Garlic-forward with a fresh dill finish.
+- Cumberland | Traditional British-style seasoning with savoury herbs and pepper.
+- Irish | Mild, savoury and traditionally seasoned.
+- Hungarian | Mild, savoury and well suited to the grill.
+
+## Spicy | spicy
+> From medium heat to bold spice, these sausages bring more than just black pepper.
+- Jalapeño & Cheddar | Cheddar throughout with bold jalapeño heat.
+- Texas Jalapeño | Jalapeño pieces with a balanced medium heat.
+- Hot Country | Garlic, oregano, chilli flakes and cayenne for a bold finish.
+- Spicy Hungarian | Hungarian-style seasoning with added heat.
+- Fresh Andouille | Bold, savoury seasoning with a Cajun-style profile.
+- Fresh Chorizo | Rich, savoury seasoning with warm spice and a bold finish.
+
+## Sweet & Savoury | sweet-savoury
+- Honey & Garlic | Sweet and savoury with plenty of garlic flavour.
+- Maple | Mild, savoury and finished with classic maple sweetness.
+- Apple | Sweet apple pieces blended throughout the sausage.
+- Tomato & Basil | Savoury tomato flavour with a fresh basil finish.

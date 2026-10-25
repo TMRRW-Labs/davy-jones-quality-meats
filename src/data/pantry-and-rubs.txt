@@ -1,0 +1,17 @@
+# Rubs, Sauces & Seasonings — src/data/pantry-and-rubs.txt
+#
+# SOURCE: Project Document, Oct 2026 revision, "Rubs, Sauces & Seasonings".
+# The route stays /products/pantry-and-rubs.html so existing links keep working.
+#
+# CLIENT INSTRUCTION (Oct 2026): remove BBQ Pit Boys Rubs, remove the
+# Signature Smoky Sweet BBQ Rub product, and remove the Fuel section entirely
+# (Fogo charcoal and Lumberjack pellets).
+# "Wamp Sauce" is now "Whomp! Naked BBQ Sauce".
+
+## Rubs, Sauces & Seasonings | rubs
+> From everyday seasoning to bold barbecue flavours, choose the finishing touch that suits what you're cooking.
+- Meat Church Rubs | Available in store.
+- Whomp! Naked BBQ Sauce | A sweet, rich competition style barbecue sauce with no heat, made with brown sugar, tomato, vinegar and warm spices.
+
+## For the Dog | dog
+- Beef Marrow Dog Bones | Beef marrow bones cut in our shops and ready to take home. | | dog-bones-beef-femur.jpg

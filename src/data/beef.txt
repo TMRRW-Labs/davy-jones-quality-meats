@@ -1,0 +1,56 @@
+# Beef — src/data/beef.txt
+#
+# Fields:  - Name | description | tag | photo file in assets/img/products/
+# A product with no photo file keeps its captioned placeholder.
+#
+# SOURCE: Project Document, Oct 2026 revision, BEEF page.
+# The burger list is now one consolidated list from the client, which closes
+# the long-running conflict between the old site list and Butcher Crafted.
+#
+# FLAGGED: the document lists "6oz Bacon & Bacon". Its description mentions
+# bacon only, so it is rendered here as "6oz Bacon". Confirm with the client.
+
+## Steak | steak
+> Choose the cut and thickness you want, with custom cutting included at no extra charge. Not sure what to pick? Tell us how you're cooking it and what you like in a steak, and our butchers will point you in the right direction.
+- Rib Eye | Rich marbling, bold flavour and excellent on the grill. | Custom cut | rib-eye-steak-1.jpg
+- New York Strip Loin | Firm, tender and full of classic beef flavour. | | new-york-strip-loin-steak.jpg
+- Top Sirloin | Lean, tender and versatile for everyday grilling. | | top-sirloin-steaks-1.jpg
+- Prime Rib | Rich, well-marbled and ideal for roasting or cutting into steaks. | | bone-in-prime-rib-steak.jpg
+- Porterhouse | New York strip and tenderloin together on the bone. | | t-bone-steak.jpg
+- T-Bone | New York strip with a smaller portion of tenderloin. | | t-bone-steak.jpg
+- Beef Tenderloin | Exceptionally tender with a mild, delicate flavour. | | tenderloin-steaks-ungraded.jpg
+- Utility Beef Tenderloin | Tenderloin trimmed for value without sacrificing tenderness. | | tenderloin-steaks-ungraded.jpg
+- Bacon Wrapped Utility Beef Tenderloin | Tenderloin wrapped by hand with bacon in our shop. | Butcher Crafted | bacon-wrapped-beef-tenderloin-ungraded.jpg
+- Hanger | Rich, beefy flavour with a tender bite.
+- Flank | Lean, flavourful and ideal for grilling and slicing. | | beef-flank-steak-frozen-2lbs.jpg
+- Coulotte (Picanha) | Top sirloin cap with the fat cap left on for added flavour. | | aaa-picanha-1.jpg
+
+## Burgers | burgers
+> Ground and pressed in our shops, with everything from classic house burgers to premium beef and specialty flavours.
+- 6oz Signature Steak Burger | A premium steak burger with rich beef flavour. | | 6oz-prime-rib-burgers-4-pack.jpg
+- 6oz Brisket Burger | Made with brisket for a rich, juicy bite.
+- 6oz Medium | Our classic house burger. | | 6oz-beef-burgers-4-flavours-4-pack-1.jpg
+- 4oz Medium | The same house blend in a smaller portion. | | 4oz-beef-burgers-4-pack.jpg
+- 6oz Bacon | Blended with bacon throughout for extra richness and flavour.
+- 6oz Jalapeño & Cheddar | Blended with jalapeño and cheddar throughout. | | 6oz-beef-burgers-4-flavours-4-pack-3.jpg
+- 2oz Slider | A smaller house burger sized for slider buns. | | 2oz-medium-slider-beef-burgers-12-pack.jpg
+- 6oz Spinach & Feta Chicken Burger | A seasoned chicken burger blended with spinach and feta. | | 6oz-spinach-and-feta-chicken-burgers-4-pack-no-gluten-added-1.jpg
+- 6oz Top Sirloin | Ground from top sirloin. | | 6oz-top-sirloin-burgers-4-pack.jpg
+- 6oz Dry Aged | Made with beef from our own dry-aging program.
+- 6oz Wagyu | Made with wagyu beef.
+- 6oz Herb & Onion | Herbs and onion through the mix.
+- 6oz Mild Italian Lamb | Lamb, seasoned with herbs and onion.
+- 6oz Herb & Onion Lamb | Lamb with the herb and onion blend.
+
+## Roasts | roasts
+> Tell us how many you're feeding and how you plan to cook it. We'll help you choose the right roast, cut it to size, and trim and tie it so it's ready for the oven.
+- Prime Rib Roast | The centrepiece cut. Also available dry aged. | Custom cut
+- Rib Eye Roast | The same muscle as the rib eye steak, left whole.
+- Beef Tenderloin Roast | The whole tenderloin, trimmed and tied. | | beef-tenderloin-roast-ungraded.jpg
+- Utility Beef Tenderloin Roast | The same cut, trimmed for value. | | beef-tenderloin-roast-ungraded.jpg
+- Top Sirloin Roast | Lean and even. Slices cleanly.
+- Sirloin Tip Roast | Lean, even and suited to roasting. | | sirloin-tip-roast.jpg
+- Inside Round Roast | A lean oven roast that slices thin.
+- Rump Roast | Suited to slow roasting or braising. | | rump-roast.jpg
+- Boneless Cross Rib Roast | A braising cut with good marbling.
+- Boneless Blade Shoulder Roast | For the slow cooker or a covered braise.

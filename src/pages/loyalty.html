@@ -1,0 +1,111 @@
+title: Loyalty Program & 10% Off | Davy Jones Quality Meats
+desc: Join the free Davy Jones loyalty program and get 10% off your next purchase, 15% off on your birthday and member-only offers throughout the year.
+active: loyalty
+---
+<main id="main">
+
+  <section class="hero hero--page">
+    <div class="hero__photo">
+      <div class="photo"><img src="{{BASE}}assets/img/category/burgers-category.jpg" alt="Burgers made in our shops" fetchpriority="high"></div>
+    </div>
+    <div class="hero__inner shell">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="{{BASE}}index.html">Home</a><span>/</span>Loyalty Program
+      </nav>
+      <p class="eyebrow">Loyalty Program</p>
+      <h1 class="h1">Get 10% off your next visit.</h1>
+      <p class="hero__sub">Free to join, and it takes about thirty seconds.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell split">
+
+      <div>
+        <div class="eyebrow-rule"><p class="eyebrow">Sign Up</p></div>
+        <h2 class="h2-sm">Join the program.</h2>
+        <p class="lede">Signing up takes about thirty seconds and it is free to join. On your next visit, give us the email or phone number you signed up with and we&rsquo;ll apply your 10% off.</p>
+
+        <!-- Sign-up is handled by Marsello, the loyalty platform the shop
+             already runs in store. The form lives there rather than here so
+             there is one member list and one source of truth. -->
+        <div class="btn-row u-mt-l">
+          <a class="btn btn--red" href="https://davyjonesqualitymeats.marsello.app/" target="_blank" rel="noopener">Claim Your 10% Off</a>
+        </div>
+
+        <p class="form__note" style="margin-top:20px">Already a member? You don't need to sign up again. Just give us your email or phone number at the counter.</p>
+        <p class="form__note" style="margin-top:12px">Use the same email address in store that you sign up with here. That is how we find your account at the counter.</p>
+      </div>
+
+      <div>
+        <div class="steps">
+          <div class="steps__item">
+            <span class="steps__n">01</span>
+            <div>
+              <div class="steps__title">Sign up in 30 seconds</div>
+              <p>Add your name, birthday, email and phone number. It's free to join.</p>
+            </div>
+          </div>
+          <div class="steps__item">
+            <span class="steps__n">02</span>
+            <div>
+              <div class="steps__title">Get 10% off your next purchase</div>
+              <p>Redeem your 10% off code in your email.</p>
+            </div>
+          </div>
+          <div class="steps__item">
+            <span class="steps__n">03</span>
+            <div>
+              <div class="steps__title">Keep the perks</div>
+              <p>Get 15% off on your birthday, plus member-only offers throughout the year.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <p><strong>A Little Extra for Our Regular Customers.</strong></p>
+          <p>Our loyalty program is simply a way to reward the people who continue to shop with us. You&rsquo;ll receive birthday savings and occasional member-only offers throughout the year.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  {{> reviews}}
+
+  <section class="section section--bone">
+    <div class="shell">
+      <p class="eyebrow">FAQ</p>
+      <h2 class="h2">Questions we get asked</h2>
+      <div class="accordion u-mt-l">
+        <details>
+          <summary>Is it free?</summary>
+          <div class="accordion__body">
+            <p>Yes. There's no fee, no card required and no minimum spend.</p>
+          </div>
+        </details>
+        <details>
+          <summary>How do I use the 10% off?</summary>
+          <div class="accordion__body">
+            <p>You can redeem your code in the first email that is sent to you after sign up. It will be applied to your account.</p>
+          </div>
+        </details>
+        <details>
+          <summary>What do you do with my email?</summary>
+          <div class="accordion__body">
+            <p>We use it to identify your account and, if you've opted in, to send member offers and your birthday discount. You can unsubscribe from those emails at any time.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Can I sign up in the shop instead?</summary>
+          <div class="accordion__body">
+            <p>Yes. Tell us at the counter that you'd like to join and we can sign you up while you're there.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  {{> final-cta}}
+
+</main>

@@ -1,0 +1,145 @@
+title: Butcher Shop Serving {{CITY}} | Davy Jones Quality Meats
+desc: A real butcher shop {{DRIVE}} from {{CITY}}. Alberta beef aged 21 days, sausage made in-store, custom cutting always available.
+active: cities
+noindex: true
+head_extra: <meta name="robots" content="noindex,nofollow">
+---
+<!--
+  DORMANT TEMPLATE — master doc section 7.
+
+  This page is never generated on its own. It is rendered once per entry in the
+  MARKETS list in build.sh, and that list ships empty: no city pages, no links,
+  nothing in the sitemap. Davy Jones already ranks across Sarnia-Lambton, and a
+  cluster of thin near-identical pages would drag on the pages that work.
+
+  When Kyle opens a new market, add a line to MARKETS and the page appears.
+
+  To confirm the template still renders:  ./build.sh --with-demo-market
+
+  And when it does go live somewhere: replace the generic copy below with real,
+  town-specific content — actual drive times, local landmarks, answers specific
+  to that area. Two real pages beat eight thin ones.
+-->
+<main id="main">
+
+  <section class="hero hero--page">
+    <div class="hero__photo">
+      <div class="photo"><span class="photo__note">Photo: the counter, wide</span></div>
+    </div>
+    <div class="hero__inner shell">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="{{BASE}}index.html">Home</a><span>/</span>Serving {{CITY}}
+      </nav>
+      <h1 class="h1">Butcher shop serving {{CITY}}</h1>
+      <p class="hero__sub">Our {{SHOP}} shop is {{DRIVE}} from {{CITY}}. Worth the drive for beef aged 21 days and sausage made in the shop.</p>
+      <div class="btn-row">
+        <a class="btn btn--red" href="https://www.google.com/maps/dir/?api=1&amp;destination={{SHOP_ADDRESS}}" target="_blank" rel="noopener">Get Directions</a>
+        <a class="btn btn--ghost" href="tel:{{SHOP_PHONE}}">Call {{SHOP}}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell">
+      <p class="eyebrow">Why {{CITY}} shops here</p>
+      <h2 class="h2 u-max-780">Three reasons people make the drive.</h2>
+      <div class="box-grid box-grid--3 u-mt-l">
+        <div class="box">
+          <h3 class="h3">Real butchers, not a meat counter</h3>
+          <p>Custom cutting always available, and staff who will tell you how to cook it.</p>
+        </div>
+        <div class="box">
+          <h3 class="h3">Alberta beef, aged 21+ days</h3>
+          <p>A minimum of three weeks before it gets cut.</p>
+        </div>
+        <div class="box">
+          <h3 class="h3">Made in this shop</h3>
+          <p>Sausage, burgers and the Butcher Crafted line, all made on site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--bone">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">What we cut</p>
+          <h2 class="h2">What's in the case.</h2>
+        </div>
+        <a class="link-rule" href="{{BASE}}products/index.html">See all products</a>
+      </div>
+      <div class="card-grid card-grid--4">
+        <a class="card" href="{{BASE}}products/beef.html">
+          <div class="card__body"><div><div class="card__title">Beef</div><p class="card__sub">Alberta beef, aged 21+ days.</p></div><span class="card__more">Learn More</span></div>
+        </a>
+        <a class="card card--feature" href="{{BASE}}products/premium-dry-aged.html">
+          <div class="card__body"><div><div class="card__title">Dry Aged</div><p class="card__sub">Aged in-house. Prime rib first.</p></div><span class="card__more">Learn More</span></div>
+        </a>
+        <a class="card" href="{{BASE}}products/sausage.html">
+          <div class="card__body"><div><div class="card__title">Sausage</div><p class="card__sub">Every one made in this shop.</p></div><span class="card__more">Learn More</span></div>
+        </a>
+        <a class="card card--feature" href="{{BASE}}products/butcher-crafted.html">
+          <div class="card__body"><div><div class="card__title">Butcher Crafted</div><p class="card__sub">Seasoned, stuffed, oven-ready.</p></div><span class="card__more">Learn More</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="shell split">
+      <div>
+        <div class="eyebrow-rule"><p class="eyebrow">Getting here</p></div>
+        <h2 class="h2-sm">{{SHOP_ADDRESS}}</h2>
+        <div class="prose u-max-520" style="margin-top:28px">
+          <p>{{DRIVE}} from {{CITY}}.</p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--ink" href="tel:{{SHOP_PHONE}}">{{SHOP_PHONE}}</a>
+          <a class="btn btn--outline" href="https://www.google.com/maps/dir/?api=1&amp;destination={{SHOP_ADDRESS}}" target="_blank" rel="noopener">Directions</a>
+        </div>
+      </div>
+      <div class="photo photo--wide">
+        <span class="photo__note">Map: embed the {{SHOP}} shop</span>
+      </div>
+    </div>
+  </section>
+
+  {{> reviews}}
+
+  <section class="section section--bone">
+    <div class="shell">
+      <p class="eyebrow">{{CITY}} FAQ</p>
+      <h2 class="h2">Questions from {{CITY}}</h2>
+      <div class="accordion u-mt-l">
+        <details>
+          <summary>Do you serve {{CITY}}?</summary>
+          <div class="accordion__body">
+            <p>Yes. Plenty of our regulars come from {{CITY}}. It is {{DRIVE}} to the {{SHOP}} shop.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Do you deliver to {{CITY}}?</summary>
+          <div class="accordion__body">
+            <p>Through our online store, with free delivery over $150. Otherwise it's pickup at the shop.</p>
+          </div>
+        </details>
+        <details>
+          <summary>How far is it?</summary>
+          <div class="accordion__body">
+            <p>{{DRIVE}}. Call ahead and we'll have your order cut and wrapped when you arrive.</p>
+          </div>
+        </details>
+        <details>
+          <summary>Can I order ahead?</summary>
+          <div class="accordion__body">
+            <p>Yes. Call the shop and we will get your order ready. For larger orders, give us a few days notice.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  {{> final-cta}}
+
+</main>

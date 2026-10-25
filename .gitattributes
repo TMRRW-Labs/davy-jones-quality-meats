@@ -1,0 +1,12 @@
+# The build runs on Netlify's Linux image. Shell and Perl scripts must keep LF
+# endings or the shebang breaks with a "bad interpreter" error.
+*.sh   text eol=lf
+*.pl   text eol=lf
+*.awk  text eol=lf
+build.sh text eol=lf
+
+# Keep binary assets untouched.
+*.jpg  binary
+*.png  binary
+*.webp binary
+*.ico  binary

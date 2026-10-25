@@ -1,0 +1,33 @@
+# Netlify / Cloudflare Pages response headers.
+#
+# Security headers first, then caching. Nothing here changes how the site
+# looks; it changes what the browser is willing to do with it.
+
+/*
+  # Stop other sites framing ours. We embed Google Maps, which is the other
+  # direction, so this does not affect the maps on Contact and Locations.
+  X-Frame-Options: SAMEORIGIN
+  # Never let a browser second-guess a declared Content-Type.
+  X-Content-Type-Options: nosniff
+  # Send the full referrer within our own site, origin only when leaving it.
+  Referrer-Policy: strict-origin-when-cross-origin
+  # We ask for none of these, so switch them off for anything embedded too.
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=()
+  # Force HTTPS for a year. Deliberately without "preload": preload is a
+  # one-way door that needs a separate submission and is slow to undo.
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  # Keep cross-origin isolation sane without blocking the fonts/pixel/maps.
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+
+# Fingerprint-free assets, so cache hard but let a rebuild win on HTML.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# A Content-Security-Policy would be the next step up. It is left off rather
+# than guessed at, because a wrong one silently breaks the Meta pixel, Google
+# Fonts or the Maps embeds. A starting point to test in report-only mode:
+#
+#   Content-Security-Policy-Report-Only: default-src 'self'; img-src 'self' data: https://www.facebook.com; script-src 'self' 'unsafe-inline' https://connect.facebook.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; frame-src https://www.google.com; connect-src 'self' https://www.facebook.com
