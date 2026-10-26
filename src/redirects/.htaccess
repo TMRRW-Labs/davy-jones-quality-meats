@@ -1,52 +1,43 @@
-# Apache equivalent of _redirects, for a cPanel-style host.
-# Use whichever file matches the host; they say the same thing.
+# Apache fallback for the redirect map in _redirects. Only used if the site
+# ever moves off Netlify / Cloudflare Pages onto Apache hosting.
 #
-# VERIFY BEFORE LAUNCH against the real URL list in Google Search Console.
+# The new site reuses the slugs the live WordPress site already has indexed,
+# so /beef/, /chicken/, /pork/, /sausage/, /appetizers/, /gluten-free/,
+# /dry-aged-meats/, /freezer-packs/, /contact/ and /products/ need no rule.
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Product pages
-  RewriteRule ^beef/?$                  /products/beef.html [R=301,L]
-  RewriteRule ^fresh-beef/?$            /products/beef.html [R=301,L]
-  RewriteRule ^steaks?/?$               /products/beef.html#steak [R=301,L]
-  RewriteRule ^burgers/?$               /products/beef.html#burgers [R=301,L]
-  RewriteRule ^roasts/?$                /products/beef.html#roasts [R=301,L]
-  RewriteRule ^(premium-)?dry-aged/?$   /products/premium-dry-aged.html [R=301,L]
-  RewriteRule ^chicken/?$               /products/chicken.html [R=301,L]
-  RewriteRule ^pork/?$                  /products/pork.html [R=301,L]
-  RewriteRule ^sausages?/?$             /products/sausage.html [R=301,L]
-  RewriteRule ^appetizers/?$            /products/appetizers.html [R=301,L]
-  RewriteRule ^apps/?$                  /products/appetizers.html [R=301,L]
-  RewriteRule ^gluten-free/?$           /products/gluten-free.html [R=301,L]
+  # Beef sub-pages are now sections of the single beef page.
+  RewriteRule ^beef/steak/?$            /beef/#steak [R=301,L,NE]
+  RewriteRule ^beef/burgers/?$          /beef/#burgers [R=301,L,NE]
+  RewriteRule ^beef/beef-roast/?$       /beef/#roasts [R=301,L,NE]
+  RewriteRule ^steaks?/?$               /beef/#steak [R=301,L,NE]
+  RewriteRule ^burgers/?$               /beef/#burgers [R=301,L,NE]
+  RewriteRule ^roasts/?$                /beef/#roasts [R=301,L,NE]
+  RewriteRule ^fresh-beef/?$            /beef/ [R=301,L]
 
   # Merged pages
-  RewriteRule ^meatloaf/?$              /products/butcher-crafted.html#beef [R=301,L]
-  RewriteRule ^(beef-marrow-)?dog-bones/?$ /products/pantry-and-rubs.html#dog [R=301,L]
-  RewriteRule ^meat-church/?$           /products/pantry-and-rubs.html#rubs [R=301,L]
-  RewriteRule ^bbq-pit-boys/?$          /products/pantry-and-rubs.html#rubs [R=301,L]
-  # Charcoal and pellets discontinued Oct 2026; land them on the rubs section.
-  RewriteRule ^fogo(-charcoal)?/?$      /products/pantry-and-rubs.html#rubs [R=301,L]
-  RewriteRule ^lumberjack(-pellets)?/?$ /products/pantry-and-rubs.html#rubs [R=301,L]
+  RewriteRule ^meatloaf/?$              /butcher-crafted/#beef [R=301,L,NE]
+  RewriteRule ^meat-church-rubs/?$      /pantry-and-rubs/#rubs [R=301,L,NE]
+  RewriteRule ^(beef-marrow-)?dog-bones/?$ /pantry-and-rubs/#dog [R=301,L,NE]
 
-  # Everything else
-  RewriteRule ^(freezer-)?packs/?$      /freezer-packs.html [R=301,L]
-  RewriteRule ^freezer-packs/?$         /freezer-packs.html [R=301,L]
-  RewriteRule ^about(-us)?/?$           /our-story.html [R=301,L]
-  RewriteRule ^our-story/?$             /our-story.html [R=301,L]
-  RewriteRule ^contact(-us)?/?$         /contact.html [R=301,L]
-  RewriteRule ^locations/?$             /locations/index.html [R=301,L]
-  RewriteRule ^shop/?$                  /products/index.html [R=301,L]
-  RewriteRule ^products/?$              /products/index.html [R=301,L]
-  RewriteRule ^privacy-policy/?$        /privacy.html [R=301,L]
-  RewriteRule ^terms-of-use/?$          /terms.html [R=301,L]
-</IfModule>
+  # Discontinued lines (client instruction, Oct 2026)
+  RewriteRule ^bbq-pit-boys-rubs/?$     /pantry-and-rubs/#rubs [R=301,L,NE]
+  RewriteRule ^fogo(-charcoal)?/?$      /pantry-and-rubs/#rubs [R=301,L,NE]
+  RewriteRule ^lumberjack(-pellets)?/?$ /pantry-and-rubs/#rubs [R=301,L,NE]
 
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresByType text/css            "access plus 1 year"
-  ExpiresByType application/javascript "access plus 1 year"
-  ExpiresByType image/webp          "access plus 1 year"
-  ExpiresByType image/svg+xml       "access plus 1 year"
-  ExpiresByType text/html           "access plus 1 hour"
+  # WordPress published Our Story on a duplicate slug.
+  RewriteRule ^our-story-2/?$           /our-story/ [R=301,L]
+
+  # Spellings and shortcuts that may exist off-site
+  RewriteRule ^(premium-)?dry-aged/?$   /dry-aged-meats/ [R=301,L]
+  RewriteRule ^sausages/?$              /sausage/ [R=301,L]
+  RewriteRule ^apps/?$                  /appetizers/ [R=301,L]
+  RewriteRule ^packs/?$                 /freezer-packs/ [R=301,L]
+  RewriteRule ^about(-us)?/?$           /our-story/ [R=301,L]
+  RewriteRule ^contact-us/?$            /contact/ [R=301,L]
+  RewriteRule ^shop/?$                  /products/ [R=301,L]
+  RewriteRule ^privacy-policy/?$        /privacy/ [R=301,L]
+  RewriteRule ^terms-of-use/?$          /terms/ [R=301,L]
 </IfModule>

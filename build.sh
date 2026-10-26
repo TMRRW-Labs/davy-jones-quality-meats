@@ -98,10 +98,11 @@ expand_products() {
 
 # Substitute the scalar variables and the nav active-state markers.
 substitute() {
-  local base="$1" title="$2" desc="$3" path="$4" active="$5" extra="$6"
+  local base="$1" title="$2" desc="$3" path="$4" active="$5" extra="$6" home="$7"
   awk -v base="$base" -v title="$title" -v desc="$desc" -v path="$path" \
       -v active="$active" -v year="$YEAR" -v built="$BUILD_DATE" \
-      -v siteurl="$SITE_URL" -v extra="$extra" -v storeurl="$STORE_URL" '
+      -v siteurl="$SITE_URL" -v extra="$extra" -v storeurl="$STORE_URL" \
+      -v home="$home" '
     function rep(line, key, val) {
       k = "{{" key "}}"
       while ((i = index(line, k)) > 0)
@@ -111,6 +112,7 @@ substitute() {
     {
       line = $0
       line = rep(line, "BASE", base)
+      line = rep(line, "HOME", home)
       line = rep(line, "TITLE", title)
       line = rep(line, "DESC", desc)
       line = rep(line, "PATH", path)
@@ -150,6 +152,10 @@ build_page() {  # build_page <src file> <out path relative to dist>
   base=""
   for ((i = 0; i < depth; i++)); do base="../$base"; done
 
+  # Home link: "./" at the root, "../" (and deeper) further in. Points at the
+  # directory rather than index.html, and still opens off the filesystem.
+  local home="${base:-./}"
+
   # Directory pages canonicalise to the trailing-slash form, which is what the
   # host actually serves. "/locations" 301s to "/locations/", so pointing the
   # canonical and the sitemap at the bare form aims them at a redirect.
@@ -165,7 +171,7 @@ build_page() {  # build_page <src file> <out path relative to dist>
     sed '1,/^---$/d' "$src"
     cat "$SRC/partials/footer.html"
   } | expand_includes | expand_includes | expand_products \
-    | substitute "$base" "$title" "$desc" "$path" "$active" "$extra" \
+    | substitute "$base" "$title" "$desc" "$path" "$active" "$extra" "$home" \
     > "$OUT/$rel"
 
   if [[ "$noindex" != "true" ]]; then
