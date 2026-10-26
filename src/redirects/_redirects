@@ -71,21 +71,23 @@
 # WordPress ID permalinks (/?p=NNN). They self-canonicalise to the pretty URL,
 # so Google indexes the pretty one, but links shared to Facebook over the years
 # often use this form. Verified against the live site on 26 October 2026.
-/    p=209                  /contact/                           301
-/    p=213                  /our-story/                         301
-/    p=295                  /freezer-packs/                     301
-/    p=304                  /pork/                              301
-/    p=323                  /sausage/                           301
-/    p=556                  /products/                          301
-/    p=560                  /appetizers/                        301
-/    p=1115                 /pantry-and-rubs/#rubs              301
-/    p=1116                 /pantry-and-rubs/#rubs              301
-/    p=1215                 /dry-aged-meats/                    301
-/    p=1244                 /gluten-free/                       301
-/    p=1290                 /beef/#steak                        301
-/    p=1299                 /beef/#burgers                      301
-/    p=1304                 /beef/#roasts                       301
-/    p=1309                 /butcher-crafted/#beef              301
-/    p=1314                 /chicken/                           301
-/    p=1875                 /pantry-and-rubs/#rubs              301
-/    p=1895                 /pantry-and-rubs/#rubs              301
+# The trailing "!" forces the rule: without it Netlify serves the static
+# index.html at "/" and the redirect never runs.
+/    p=209                  /contact/                           301!
+/    p=213                  /our-story/                         301!
+/    p=295                  /freezer-packs/                     301!
+/    p=304                  /pork/                              301!
+/    p=323                  /sausage/                           301!
+/    p=556                  /products/                          301!
+/    p=560                  /appetizers/                        301!
+/    p=1115                 /pantry-and-rubs/#rubs              301!
+/    p=1116                 /pantry-and-rubs/#rubs              301!
+/    p=1215                 /dry-aged-meats/                    301!
+/    p=1244                 /gluten-free/                       301!
+/    p=1290                 /beef/#steak                        301!
+/    p=1299                 /beef/#burgers                      301!
+/    p=1304                 /beef/#roasts                       301!
+/    p=1309                 /butcher-crafted/#beef              301!
+/    p=1314                 /chicken/                           301!
+/    p=1875                 /pantry-and-rubs/#rubs              301!
+/    p=1895                 /pantry-and-rubs/#rubs              301!
