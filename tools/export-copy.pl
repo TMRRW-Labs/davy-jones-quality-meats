@@ -13,26 +13,26 @@ binmode(STDOUT, ':encoding(UTF-8)');
 my @order = qw(
   index.html
   products/index.html
-  products/beef.html
-  products/premium-dry-aged.html
-  products/chicken.html
-  products/pork.html
-  products/sausage.html
-  products/butcher-crafted.html
-  products/appetizers.html
-  products/gluten-free.html
-  products/pantry-and-rubs.html
-  freezer-packs.html
-  custom-cutting.html
-  our-story.html
+  beef/index.html
+  dry-aged-meats/index.html
+  chicken/index.html
+  pork/index.html
+  sausage/index.html
+  butcher-crafted/index.html
+  appetizers/index.html
+  gluten-free/index.html
+  pantry-and-rubs/index.html
+  freezer-packs/index.html
+  custom-cutting/index.html
+  our-story/index.html
   locations/index.html
-  locations/sarnia.html
-  locations/point-edward.html
-  loyalty.html
-  contact.html
-  faq.html
-  privacy.html
-  terms.html
+  locations/sarnia/index.html
+  locations/point-edward/index.html
+  loyalty/index.html
+  contact/index.html
+  faq/index.html
+  privacy/index.html
+  terms/index.html
 );
 
 sub clean {
