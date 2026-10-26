@@ -73,8 +73,12 @@
 # often use this form. Verified against the live site on 26 October 2026.
 # The trailing "!" forces the rule: without it Netlify serves the static
 # index.html at "/" and the redirect never runs.
+# Netlify carries the original query string through to the destination and
+# there is no way to strip it, so these land on e.g. /our-story/?p=213. That
+# page serves 200 and its canonical points at the clean URL, so Google
+# consolidates the two; it is untidy rather than harmful.
 /    p=209                  /contact/                           301!
-/    p=213                  /our-story/?                         301!
+/    p=213                  /our-story/                         301!
 /    p=295                  /freezer-packs/                     301!
 /    p=304                  /pork/                              301!
 /    p=323                  /sausage/                           301!
