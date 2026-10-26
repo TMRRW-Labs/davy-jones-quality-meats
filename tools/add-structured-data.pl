@@ -95,7 +95,7 @@ for my $f (@pages) {
   }
 
   # ---- FAQPage ----------------------------------------------------------
-  if ($f =~ m{faq\.html$}) {
+  if ($f =~ m{(^|/)faq/index\.html$} || $f =~ m{(^|/)faq\.html$}) {
     my @qa;
     while ($html =~ m{<details>\s*<summary>(.*?)</summary>\s*<div class="accordion__body">(.*?)</div>\s*</details>}gs) {
       my ($q, $abody) = ($1, $2);
