@@ -420,16 +420,25 @@ a.card:hover .card__more::after { transform: rotate(45deg) translate(2px, -2px);
 .product--compact .photo--card { aspect-ratio: 2 / 1; }
 .product--compact .product__body { padding: 14px 16px 16px; }
 
-/* Product with no photograph. Reads as a deliberate text card rather than a
-   gap: tinted ground, centred copy, and it stretches to the row height so the
-   grid stays even next to cards that do carry an image. */
+/* Products with no photograph are grouped into their own grid below the
+   photographed ones, at a smaller size. Sitting them beside a photo card
+   meant matching its height with nothing to put in the space, which read as
+   a missing image rather than a deliberate text card. */
+.product-grid--text { grid-template-columns: repeat(2, 1fr); margin-top: clamp(12px, 1.4vw, 20px); }
+@media (min-width: 620px)  { .product-grid--text { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1000px) { .product-grid--text { grid-template-columns: repeat(4, 1fr); } }
+
+/* Two photographed products span the row instead of leaving an empty track. */
+@media (min-width: 760px) { .product-grid--n2 { grid-template-columns: repeat(2, 1fr); } }
+
 .product--text { background: var(--bone); }
 .product--text .product__body {
   flex: 1; display: flex; flex-direction: column; align-items: flex-start;
-  justify-content: center; padding: clamp(22px, 2.4vw, 32px) clamp(18px, 2vw, 26px);
+  justify-content: center; padding: clamp(15px, 1.5vw, 20px) clamp(14px, 1.4vw, 18px);
 }
-.product--text .product__name { font-size: clamp(16px, 1.35vw, 19px); }
-.product--text .product__desc { color: var(--muted); }
+.product--text .product__name { font-size: clamp(14px, 1.1vw, 16px); }
+.product--text .product__desc { color: var(--muted); font-size: 13px; margin-top: 5px; }
+.product--text .product__tag { margin-top: 10px; }
 
 /* Hairline box grid (why-choose boxes, shop cards) */
 .box-grid { display: grid; gap: 1px; background: var(--line-2); border: 1px solid var(--line-2); grid-template-columns: 1fr; }
