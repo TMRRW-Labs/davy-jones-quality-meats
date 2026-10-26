@@ -17,7 +17,11 @@ cd "$ROOT"
 
 SRC="src"
 OUT="dist"
-SITE_URL="https://www.davyjonesqualitymeats.ca"
+# Non-www, because that is what the live site has always canonicalised to and
+# what Google has indexed: davyjonesqualitymeats.ca serves 200 and
+# www.davyjonesqualitymeats.ca 301s onto it. Publishing www canonicals would
+# make this a domain move on top of a site move, for no gain.
+SITE_URL="https://davyjonesqualitymeats.ca"
 STORE_URL="https://shop.davyjonesqualitymeats.ca/"
 YEAR="$(date +%Y)"
 BUILD_DATE="$(date +%Y-%m-%d)"

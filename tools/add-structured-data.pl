@@ -6,7 +6,7 @@
 #                   that has one, so the markup and the data can never drift.
 #   FAQPage         from the <details>/<summary> accordion on faq.html.
 #
-# Run:  perl tools/add-structured-data.pl dist https://www.davyjonesqualitymeats.ca
+# Run:  perl tools/add-structured-data.pl dist https://davyjonesqualitymeats.ca
 use strict; use warnings; use utf8;
 use File::Find;
 use File::Basename;
