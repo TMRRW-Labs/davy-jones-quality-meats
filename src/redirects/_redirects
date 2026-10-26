@@ -74,7 +74,7 @@
 # The trailing "!" forces the rule: without it Netlify serves the static
 # index.html at "/" and the redirect never runs.
 /    p=209                  /contact/                           301!
-/    p=213                  /our-story/                         301!
+/    p=213                  /our-story/?                         301!
 /    p=295                  /freezer-packs/                     301!
 /    p=304                  /pork/                              301!
 /    p=323                  /sausage/                           301!
