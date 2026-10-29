@@ -1,12 +1,25 @@
 # Premium Dry Aged — src/data/premium-dry-aged.txt
 #
-# SOURCE: Project Document, Oct 2026 revision, PREMIUM DRY AGED page.
+# SOURCE: Project Document, Oct 2026 revision, PREMIUM DRY AGED page:
+# "Focus on prime rib. Also carried: AAA Ribeye, AAA New York Strip."
+# The page plan lists the sections as Prime Rib, Ribeye, NY Strip.
 #
-# CLIENT INSTRUCTION (Oct 2026): remove the Ribeye and New York Strip sections.
-# Only Prime Rib remains, so the jump nav no longer renders (it needs 3+).
+# What Kyle asked for was a change of emphasis, not a shorter range. The old
+# site led with ribeye and tenderloin; prime rib is the actual in-house
+# program, so it leads here and the other two follow. The cut that genuinely
+# came out is the tenderloin claim.
+#
 # NOT PUBLISHED: any aging duration. Still unconfirmed.
 
 ## Prime Rib | prime-rib
 > Prime rib is the centrepiece of our dry-aging program. Its natural marbling makes it exceptionally well suited to the process, developing rich flavour and a tender, luxurious texture.
 - Dry Aged Prime Rib Roast | Bone in and cut to the number of ribs you need. | Call to reserve
 - Dry Aged Prime Rib Steaks | Cut from the roast to the thickness you want. | Call to reserve
+
+## Ribeye | ribeye
+> AAA ribeye from the same program, for when you want the dry-aged flavour in a single steak rather than a roast.
+- Dry Aged AAA Ribeye | Cut to the thickness you ask for. | Call to reserve
+
+## New York Strip | new-york-strip
+> AAA New York strip, dry aged in-house. A leaner cut than the ribeye, with a firmer bite and a clean, beefy finish.
+- Dry Aged AAA New York Strip | Cut to the thickness you ask for. | Call to reserve
