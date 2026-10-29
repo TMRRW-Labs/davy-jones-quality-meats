@@ -9,6 +9,11 @@
 # program, so it leads here and the other two follow. The cut that genuinely
 # came out is the tenderloin claim.
 #
+# The Ribeye and New York Strip sections carry no lead line and no product
+# descriptions on purpose: the product names come straight from Kyle's
+# document, so restoring them puts no unreviewed copy in front of him. Both
+# are optional in the renderer. Add descriptions once he has seen the page.
+#
 # NOT PUBLISHED: any aging duration. Still unconfirmed.
 
 ## Prime Rib | prime-rib
@@ -17,9 +22,7 @@
 - Dry Aged Prime Rib Steaks | Cut from the roast to the thickness you want. | Call to reserve
 
 ## Ribeye | ribeye
-> AAA ribeye from the same program, for when you want the dry-aged flavour in a single steak rather than a roast.
-- Dry Aged AAA Ribeye | Cut to the thickness you ask for. | Call to reserve
+- Dry Aged AAA Ribeye | | Call to reserve
 
 ## New York Strip | new-york-strip
-> AAA New York strip, dry aged in-house. A leaner cut than the ribeye, with a firmer bite and a clean, beefy finish.
-- Dry Aged AAA New York Strip | Cut to the thickness you ask for. | Call to reserve
+- Dry Aged AAA New York Strip | | Call to reserve
