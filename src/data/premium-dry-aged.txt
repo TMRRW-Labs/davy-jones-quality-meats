@@ -1,18 +1,17 @@
 # Premium Dry Aged — src/data/premium-dry-aged.txt
 #
-# SOURCE: Project Document, Oct 2026 revision, PREMIUM DRY AGED page:
-# "Focus on prime rib. Also carried: AAA Ribeye, AAA New York Strip."
-# The page plan lists the sections as Prime Rib, Ribeye, NY Strip.
+# SOURCE: Project Document, Oct 2026 revision, plus Kyle's note of 2 Nov 2026:
+# "take out rib eye. Prime Rib and New York can stay with Prime Rib being the
+# main dry aged product we offer."
 #
-# What Kyle asked for was a change of emphasis, not a shorter range. The old
-# site led with ribeye and tenderloin; prime rib is the actual in-house
-# program, so it leads here and the other two follow. The cut that genuinely
-# came out is the tenderloin claim.
+# An earlier pass read "focus on prime rib" as a cut to the range and dropped
+# Ribeye and New York Strip entirely. Kyle has now settled it: Ribeye goes,
+# New York Strip stays, prime rib leads.
 #
-# The Ribeye and New York Strip sections carry no lead line and no product
-# descriptions on purpose: the product names come straight from Kyle's
-# document, so restoring them puts no unreviewed copy in front of him. Both
-# are optional in the renderer. Add descriptions once he has seen the page.
+# New York Strip carries no lead line and no product description on purpose.
+# The name comes straight from Kyle's document, so the section puts no
+# unreviewed copy in front of him; both fields are optional in the renderer.
+# Write them once he has seen the page.
 #
 # NOT PUBLISHED: any aging duration. Still unconfirmed.
 
@@ -20,9 +19,6 @@
 > Prime rib is the centrepiece of our dry-aging program. Its natural marbling makes it exceptionally well suited to the process, developing rich flavour and a tender, luxurious texture.
 - Dry Aged Prime Rib Roast | Bone in and cut to the number of ribs you need. | Call to reserve
 - Dry Aged Prime Rib Steaks | Cut from the roast to the thickness you want. | Call to reserve
-
-## Ribeye | ribeye
-- Dry Aged AAA Ribeye | | Call to reserve
 
 ## New York Strip | new-york-strip
 - Dry Aged AAA New York Strip | | Call to reserve
