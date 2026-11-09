@@ -18,6 +18,9 @@ $types = @{
 try {
   while ($listener.IsListening) {
     $ctx = $listener.GetContext()
+    # One failed request (browser cancelled it, HEAD request) must not take the
+    # whole preview server down with it.
+    try {
     $rel = [System.Uri]::UnescapeDataString($ctx.Request.Url.AbsolutePath).TrimStart('/')
     if ($rel -eq "") { $rel = "index.html" }
     $path = Join-Path $root $rel
@@ -29,12 +32,16 @@ try {
       $ctx.Response.ContentType = if ($types.ContainsKey($ext)) { $types[$ext] } else { "application/octet-stream" }
       $bytes = [System.IO.File]::ReadAllBytes($path)
       $ctx.Response.ContentLength64 = $bytes.Length
-      $ctx.Response.OutputStream.Write($bytes, 0, $bytes.Length)
+      if ($ctx.Request.HttpMethod -ne "HEAD") { $ctx.Response.OutputStream.Write($bytes, 0, $bytes.Length) }
     } else {
       $ctx.Response.StatusCode = 404
       $msg = [System.Text.Encoding]::UTF8.GetBytes("404 - $rel")
       $ctx.Response.OutputStream.Write($msg, 0, $msg.Length)
     }
-    $ctx.Response.OutputStream.Close()
+    } catch {
+      Write-Host "request failed: $rel ($($_.Exception.Message))"
+    } finally {
+      try { $ctx.Response.OutputStream.Close() } catch {}
+    }
   }
 } finally { $listener.Stop() }
