@@ -68,6 +68,11 @@
 /author/*                   /our-story/                         301
 /tag/*                      /products/                          301
 
+# Yoast's old sitemap addresses, still listed in Search Console and cached by
+# crawlers. Point them at the new sitemap rather than a 404.
+/sitemap_index.xml          /sitemap.xml                        301
+/page-sitemap.xml           /sitemap.xml                        301
+
 # WordPress ID permalinks (/?p=NNN). They self-canonicalise to the pretty URL,
 # so Google indexes the pretty one, but links shared to Facebook over the years
 # often use this form. Verified against the live site on 26 October 2026.

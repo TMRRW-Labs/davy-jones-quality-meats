@@ -40,4 +40,7 @@
   RewriteRule ^shop/?$                  /products/ [R=301,L]
   RewriteRule ^privacy-policy/?$        /privacy/ [R=301,L]
   RewriteRule ^terms-of-use/?$          /terms/ [R=301,L]
+
+  # Yoast's old sitemap addresses
+  RewriteRule ^(sitemap_index|page-sitemap)\.xml$  /sitemap.xml [R=301,L]
 </IfModule>
